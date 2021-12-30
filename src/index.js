@@ -29,6 +29,7 @@ async function onSearch(e) {
   
   newsApiService.resetPage();
   clearGallery();
+  loadMoreBtn.classList.add('is-hidden');
 
   try {
     const images = await newsApiService.fetchImages();
